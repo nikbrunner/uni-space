@@ -1,0 +1,18 @@
+{
+    "name": "uni-space",
+    "version": "1.0.0",
+    "description": "A tiny library for unified box spacing.",
+    "main": "./src/index.html",
+    "scripts": {
+        "bundle": "parcel src/index.html -d bundle",
+        "public": "parcel build src/index.html -d public"
+    },
+    "author": "nibru",
+    "license": "ISC",
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "parcel-bundler": "^1.12.3",
+        "prismjs": "^1.17.1",
+        "sass": "^1.22.12"
+    }
+}

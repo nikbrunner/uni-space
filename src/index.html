@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="styles/styles.scss" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato|Modak&display=swap"
+            rel="stylesheet"
+        />
+        <title>uni-space</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__brand">
+                uni-<span class="header__brand--highlight">space</span>
+            </h1>
+            <p class="header__description">
+                A tiny
+                <span class="header__description--highlight">Sass / Scss</span>
+                'library' for unified box spacing
+            </p>
+        </header>
+        <pre class="code">
+<code class="language-css">$space: 5vmax;
+$space-multiplicator: 1;
+
+$space-xxs: calc((#{$space} / 8) * #{$space-multiplicator});
+$space-xs: calc((#{$space} / 4) * #{$space-multiplicator});
+$space-s: calc((#{$space} / 2) * #{$space-multiplicator});
+$space-m: calc(#{$space} * #{$space-multiplicator});
+$space-l: calc((#{$space} * 2) * #{$space-multiplicator});
+$space-xl: calc((#{$space} * 4) * #{$space-multiplicator});
+$space-xxl: calc((#{$space} * 8) * #{$space-multiplicator});
+</code></pre>
+        <div class="examples">
+            <div id="box-xxs" class="box">
+                <p class="box__description">$space-xxs</p>
+                <div class="bar" id="bar-xxs"></div>
+            </div>
+            <div id="box-xs" class="box">
+                <p class="box__description">$space-xs</p>
+                <div class="bar" id="bar-xs"></div>
+            </div>
+            <div id="box-s" class="box">
+                <p class="box__description">$space-s</p>
+                <div class="bar" id="bar-s"></div>
+            </div>
+            <div id="box-m" class="box">
+                <p class="box__description">$space-m</p>
+                <div class="bar" id="bar-m"></div>
+            </div>
+            <div id="box-l" class="box">
+                <p class="box__description">$space-l</p>
+                <div class="bar" id="bar-l"></div>
+            </div>
+            <div id="box-xl" class="box">
+                <p class="box__description">$space-xl</p>
+                <div class="bar" id="bar-xl"></div>
+            </div>
+            <div id="box-xxl" class="box">
+                <p class="box__description">$space-xxl</p>
+                <div class="bar" id="bar-xxl"></div>
+            </div>
+        </div>
+        <script src="../node_modules/prismjs/prism.js"></script>
+    </body>
+</html>
