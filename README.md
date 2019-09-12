@@ -1,6 +1,6 @@
 # 📐 uni-space
 
-A tiny Scss | Sass 'library' for unified box spacing.
+A tiny set Scss | Sass variables for unified box spacing.
 
 This is in very early stage.
 
