@@ -4,89 +4,94 @@
 @import '../../node_modules/prismjs/themes/prism-funky.css';
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ::selection {
-    background: $color7;
-    color: $color3;
+	background: $color7;
+	color: $color3;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-family: 'Lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .header {
-    padding: $space-s $space-m;
-    &__brand {
-        font-size: 3rem;
-        font-weight: normal;
-        font-family: 'Modak', cursive;
-        color: adjust-hue($color: $color1, $degrees: 180);
-        &--highlight {
-            color: $color1;
-        }
-    }
-    &__description {
-        &--highlight {
-            color: $color1;
-        }
-    }
+	padding: $space-s $space-m;
+	svg {
+		height: 1rem;
+		path {
+			fill: $color1;
+		}
+	}
+	&__brand {
+		font-size: 3rem;
+		font-weight: normal;
+		font-family: 'Modak', cursive;
+		color: adjust-hue($color: $color1, $degrees: 180);
+		&--highlight {
+			color: $color1;
+		}
+	}
+	&__description {
+		&--highlight {
+			color: $color1;
+		}
+	}
 }
 
 .code {
-    border-top: 1px dashed $color0;
-    border-bottom: 1px dashed $color0;
-    // padding: $space-m !important;
-    padding: $spaceXY-l !important;
-    margin: 0 !important;
+	border-top: 1px dashed $color0;
+	border-bottom: 1px dashed $color0;
+	padding: $space-m !important;
+	margin: 0 !important;
 }
 
 .examples {
-    text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-    .box {
-        &__description {
-            @include flex(row nowrap, flex-start, center, center);
-            height: $space-m;
-            background: #fff;
-            color: #000;
-            font-family: 'Consolas', 'Courier New', Courier, monospace;
-            padding-left: $space-m;
-            &:before {
-                content: '👇';
-                margin-right: $space-xs;
-            }
-        }
-        #bar-xxs {
-            @include linearBG($color1, $color2);
-            height: $space-xxs;
-        }
-        #bar-xs {
-            @include linearBG($color2, $color3);
-            height: $space-xs;
-        }
-        #bar-s {
-            @include linearBG($color3, $color4);
-            height: $space-s;
-        }
-        #bar-m {
-            @include linearBG($color4, $color5);
-            height: $space-m;
-        }
-        #bar-l {
-            @include linearBG($color5, $color6);
-            height: $space-l;
-        }
-        #bar-xl {
-            @include linearBG($color6, $color7);
-            height: $space-xl;
-        }
-        #bar-xxl {
-            @include linearBG($color7, $color1);
-            height: $space-xxl;
-        }
-    }
+	text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+	.box {
+		&__description {
+			@include flex(row nowrap, flex-start, center, center);
+			height: $space-m;
+			background: #fff;
+			color: #000;
+			font-family: 'Consolas', 'Courier New', Courier, monospace;
+			padding-left: $space-m;
+			&:before {
+				content: '👇';
+				margin-right: $space-xs;
+			}
+		}
+		#bar-xxs {
+			@include linearBG($color1, $color2);
+			height: $space-xxs;
+		}
+		#bar-xs {
+			@include linearBG($color2, $color3);
+			height: $space-xs;
+		}
+		#bar-s {
+			@include linearBG($color3, $color4);
+			height: $space-s;
+		}
+		#bar-m {
+			@include linearBG($color4, $color5);
+			height: $space-m;
+		}
+		#bar-l {
+			@include linearBG($color5, $color6);
+			height: $space-l;
+		}
+		#bar-xl {
+			@include linearBG($color6, $color7);
+			height: $space-xl;
+		}
+		#bar-xxl {
+			@include linearBG($color7, $color1);
+			height: $space-xxl;
+		}
+	}
 }
