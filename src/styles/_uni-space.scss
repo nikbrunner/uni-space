@@ -8,3 +8,15 @@ $space-m: calc((#{$space} * #{$space-expansion}));
 $space-l: calc((#{$space} * 2) * #{$space-expansion});
 $space-xl: calc((#{$space} * 4) * #{$space-expansion});
 $space-xxl: calc((#{$space} * 8) * #{$space-expansion});
+
+// spaceXY-m
+$spaceXY-m: $space-m $space-m;
+$spaceX-m: 0 $space-m;
+$spaceY-m: $space-m 0;
+
+// spaceXY-l
+$spaceXY-l: $space-l $space-l;
+$spaceX-l: 0 $space-l;
+$spaceY-l: $space-l 0;
+
+// ? Ich need to make this combinable
