@@ -12,7 +12,7 @@
     "devDependencies": {
         "cssnano": "^4.1.10",
         "parcel-bundler": "^1.12.3",
-        "prismjs": "^1.17.1",
+        "prismjs": "^1.21.0",
         "sass": "^1.22.12"
     }
 }
